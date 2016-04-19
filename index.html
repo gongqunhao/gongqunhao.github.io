@@ -70,6 +70,64 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-通过Hexo-github建立博客" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2016/04/19/通过Hexo-github建立博客/" class="article-date">
+  <time datetime="2016-04-19T14:34:18.000Z" itemprop="datePublished">2016-04-19</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/04/19/通过Hexo-github建立博客/">通过Hexo+github建立博客</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="通过Hexo-github建立博客"><a href="#通过Hexo-github建立博客" class="headerlink" title="通过Hexo+github建立博客"></a>通过Hexo+github建立博客</h1><p>标签（空格分隔）： hexo github 博客 日记</p>
+<hr>
+<p>　　偶然的机会在知乎上看到一个问题<a href="http://zhihu.com/question/37804443/answer/87364001" target="_blank" rel="external">程序员能给女朋友做什么特别浪漫的礼物？ - 回答作者：梁大折腾 </a>同样身为程序员，看人家轻描淡写几句话做出一个拥有独立中文域名的网站，贴上女友照片来浪漫一把，我就有点坐不住了。（他注册的网址是www.世界上最美的女人.com 亲测有效。）<br>　　所以我打算学着做一个出来，毕竟只有三步好么。结果用了一下午的时间也只是不断地看到github pages的404页面。就在我打算放弃之际，对面宿舍大神提示到可以试试用hexo来建个人博客。我上网一搜，没想到打开了新世界的大门。<br>　　对于之前一点关于网站方面都没有了解的我，前前后后请教周围的大神，以及看了无数技术博客，搜了好多资料，才对“网站”有了更清楚的认识，真是愧对一个大三计算机专业大学生的身份。<br>　  不说废话了，下面开始介绍hexo+github建立个人博客的教程。
+　  </p>
+<p> <strong>1. 注册github账号</strong><br>    　　<a href="https://github.com/" target="_blank" rel="external">Github</a><br> <strong>2. 创建repository（仓库</strong>）<br>    　　该repository的名字应命名为：yourname.github.io （yourname是你的github账号名称）<br> <strong>3.安装Node.js</strong><br>　　<a href="https://nodejs.org/en/" target="_blank" rel="external">下载Node.js</a><br> <strong>4.安装桌面版Github</strong><br>　　<a href="https://github-windows.s3.amazonaws.com/GitHubSetup.exe" target="_blank" rel="external">下载Github（Windows版）</a><br> <strong>5.安装hexo</strong><br> 　　运行上一步安装后的Git shell，通过cd命令切换到想要安装hexo的位置执行以下步骤：</p>
+<pre><code>npm install -g hexo
+hexo init
+npm install
+</code></pre><p><strong>6.部署hexo</strong><br>　　对hexo的操作都是在上一步创建的目录下进行的（例如你创建的在D盘下，那操作都是在D:/Hexo下进行的）。</p>
+<pre><code>hexo generate
+hexo server
+</code></pre><p>　　此时可在浏览器中输入localhost:4000在本地查看博客。<br>　　当然，我们最终目的肯定是要通过我们自己的域名访问hexo搭建的博客，因此以下步骤很关键。<br>　　在hexo目录下用记事本打开_config.yml，对代码做如下修改：</p>
+<pre><code>deploy:
+  type: github
+  repository: https://github.com/yourname/.yourname.io.git
+  branch: master
+</code></pre><p>　　执行以下操作完成部署：</p>
+<pre><code>hexo generate
+hexo deploy
+</code></pre><p><strong>７.登陆你的博客！</strong><br>　　完成上述六个步骤后，就可以通过yourname.github.io看到个人博客的雏形了！</p>
+<p>　 </p>
+<p>　　</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2016/04/19/通过Hexo-github建立博客/" data-id="cin7j8d4w0004ycrc9mb923wq" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-my-new-post-0" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2016/04/19/my-new-post-0/" class="article-date">
@@ -179,7 +237,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/04/19/my-new-post-0/" data-id="cin7j3szc00035srccn4zyhdb" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2016/04/19/my-new-post-0/" data-id="cin7j8d4w0003ycrcgfhttswo" class="article-share-link">Share</a>
       
       
     </footer>
@@ -215,7 +273,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/04/07/My-New-Post/" data-id="cin7j3syw00005srcenwzam9d" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2016/04/07/My-New-Post/" data-id="cin7j8d4g0000ycrcoesamxoc" class="article-share-link">Share</a>
       
       
     </footer>
@@ -260,7 +318,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/04/07/hello-world/" data-id="cin7j3szc00025srcq3fmlfxm" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2016/04/07/hello-world/" data-id="cin7j8d4w0002ycrcbfbjeau6" class="article-share-link">Share</a>
       
       
     </footer>
@@ -298,6 +356,10 @@
     <h3 class="widget-title">最新文章</h3>
     <div class="widget">
       <ul>
+        
+          <li>
+            <a href="/2016/04/19/通过Hexo-github建立博客/">通过Hexo+github建立博客</a>
+          </li>
         
           <li>
             <a href="/2016/04/19/my-new-post-0/">Markdown使用指南</a>
